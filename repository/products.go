@@ -70,7 +70,7 @@ func (p *ProductRepo) GetProduct(r *http.Request) ([]*models.Product, error) {
 	invoiceId := vars["invoice_id"]
 
 	if invoiceId == "" {
-		return nil, errors.New("invoice  id  cannot be empty")
+		return nil, errors.New("invoice  id  can't be empty")
 	}
 	query := database.NewQuery(p.db)
 

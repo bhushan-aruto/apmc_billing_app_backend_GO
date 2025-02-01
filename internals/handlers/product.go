@@ -50,7 +50,7 @@ func (handler *ProductHandler) GetProductHandler(w http.ResponseWriter, r *http.
 	if err != nil {
 		log.Println(err)
 		w.WriteHeader(http.StatusBadRequest)
-		json.NewEncoder(w).Encode(map[string]string{"message": "error occurrred"})
+		json.NewEncoder(w).Encode(map[string]string{"message": "error has occurrred"})
 		return
 	}
 	w.WriteHeader(http.StatusOK)
